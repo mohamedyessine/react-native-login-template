@@ -5,26 +5,32 @@ import Header from '../components/Header'
 import Button from '../components/Button'
 import Paragraph from '../components/Paragraph'
 
+
+
+
 export default function StartScreen({ navigation }) {
+  
   return (
     <Background>
       <Logo />
-      <Header>Login Template</Header>
+      <Header>CrossTest</Header>
       <Paragraph>
-        The easiest way to start with your amazing application.
+        The easiest way to make physical tests.
       </Paragraph>
       <Button
         mode="contained"
-        onPress={() => navigation.navigate('LoginScreen')}
+        onPress={() => navigation.navigate('RegisterCoachScreen')}
       >
-        Login
+        Create coach
       </Button>
       <Button
         mode="outlined"
-        onPress={() => navigation.navigate('RegisterScreen')}
+        onPress={() => navigation.navigate('image')}
       >
-        Sign Up
+        All coaches
       </Button>
     </Background>
+
+
   )
 }
